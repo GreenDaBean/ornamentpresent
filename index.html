@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="colors.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<meta charset="utf-8">
+	<title>JS Bin</title>
+</head>
+
+<body>
+<p>The goal of this small, tacky game is to make a decent christmas tree and then put the ornaments on. Cool. Everything is made out of CSS and HTML.<br> v Ornaments
+	<div id="christmas">
+		<div id="tree" class="drag"></div>
+		<div id="bark"></div>
+		<div id="ornament1"></div>
+                <div id="ornament2"></div>
+                <div id="ornament3"></div>
+	</div>
+	<script>
+	
+	$(document).ready(function() {
+			$("#tree, #ornament1, #bark, #ornament2, #ornament3").draggable();
+		});
+	</script>
